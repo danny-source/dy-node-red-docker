@@ -1,5 +1,8 @@
 FROM nodered/node-red-docker
+MAINTAINER danny@35g.tw
 USER root
+RUN apt-get update \
+	&& echo 'Y'
 # init
 ENV TIME_ZONE="Asia/Taipei"
 # timezone
